@@ -1,9 +1,9 @@
 // background color of primary button
-$btn-action: $curious-blue; // #349bdb
-$btn-warning: $carrot-orange; // #ec971f
+$btn-action: $egi_blue_light;
+$btn-warning: $egi_orange;
 $footer-bg: $white;
 $footer-text: $black;
-$footer-link: darken($link-color, 10%); // #349bdb
+$footer-link: $egi_blue_dark;
 
 // text and border color of button that is in the footer
 $btn-footer-text: $black;
@@ -13,4 +13,4 @@ $btn-footer-border-hover: $silver; // #cdc9c9
 $tooltip-bg: darken($curious-blue, 20%);
 $tooltip-color: $white;
 
-$logo-height: 60px;
+$logo-height: 120px;

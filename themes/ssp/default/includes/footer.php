@@ -92,6 +92,7 @@ if ($includeLanguageBar) {
       <a href="https://grnet.gr/">
         <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
       </a>
+        <img class="ssp-footer__item__logo--eu" src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/eu.svg'); ?>" alt="European Union" />
       <div class="ssp-footer__item__copyright">
         Copyright &copy; 2016-2018
       </div>
