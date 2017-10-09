@@ -51,7 +51,9 @@ header('X-Frame-Options: SAMEORIGIN');
 </title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/css/app.css')); ?>" />
-<link rel="icon" type="image/png" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/images/favicon.png')); ?>"  />
+
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo_site-300x300.png')); ?>" />
+<link rel="apple-touch-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo_site-300x300.png')); ?>" />
 
 <?php
 
