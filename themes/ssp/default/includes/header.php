@@ -124,7 +124,7 @@ if($onLoad !== '') {
 <div class="header">
   <div class="text-center ssp-logo">
     <a href="https://egi.eu/">
-      <img src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo.svg'); ?>" alt="simplesamlphp" />
+      <img src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo.svg'); ?>" alt="EGI" />
     </a>
   </div>
   <h1 class="text-center">
