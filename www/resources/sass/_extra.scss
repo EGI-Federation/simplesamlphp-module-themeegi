@@ -51,6 +51,10 @@ form {
     margin: 0;
 }
 
+// with container-fluid row margin causes horizontal scroll
+.row {
+    margin: 0;
+}
 // Headings
 // No use of bem, when we want to override every instance of them
 
