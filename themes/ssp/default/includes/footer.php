@@ -96,7 +96,7 @@ if ($includeLanguageBar) {
     </div>
     <div class="col-sm-5 ssp-footer__item">
       <div class="ssp-footer__item__copyright">
-        <span class="ssp-footer__item__copyright__line--1">Copyright &copy; 2016-2017 | Check-in is an EGI service provided by GRNET,</span>
+        <span class="ssp-footer__item__copyright__line--1">Copyright &copy; 2016-2018 | Check-in is an EGI service provided by GRNET,</span>
         <span class="ssp-footer__item__copyright__line--2">co-funded by the <a href="https://www.egi.eu/about/egi-foundation/">EGI Foundation (EGI.eu)</a>
         and <a href="http://go.egi.eu/eng">EGI-Engage</a> | Powered by <a href="https://github.com/rciam">RCIAM</a></span>
       </div>
