@@ -90,9 +90,9 @@ if ($includeLanguageBar) {
 ?>
     <div class="col-sm-3 ssp-footer__item text-center">
       <a href="https://grnet.gr/">
-        <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
+        <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
       </a>
-        <img class="ssp-footer__item__logo--eu" src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/eu.svg'); ?>" alt="European Union" />
+        <img class="ssp-footer__item__logo--eu" src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/eu.svg'); ?>" alt="European Union" />
     </div>
     <div class="col-sm-5 ssp-footer__item">
       <div class="ssp-footer__item__copyright">
@@ -110,16 +110,16 @@ if ($includeLanguageBar) {
 </footer>
 
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/dropdown.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/dropdown.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/modal.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/modal.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/tooltip.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/tooltip.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/js/theme.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/theme.js')); ?>">
   </script>
 
 </body>
