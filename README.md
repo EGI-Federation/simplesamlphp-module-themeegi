@@ -7,6 +7,8 @@ unified login service to its users.
 It has been created by customizing the [rciam vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
 See the resulted screens in the directory [screenshots](screenshots/).
 
+More information regarding the installation and the customization of the theme you may found
+in the [repository of the vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
 
 ## License
 
