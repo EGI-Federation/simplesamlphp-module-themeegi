@@ -1,2 +1,2 @@
-simplesamlphp-module-themevanilla
-version 2.0.0
+simplesamlphp-module-themeegi
+version egi-1.0.0
