@@ -51,6 +51,10 @@ form {
     margin: 0;
 }
 
+// with container-fluid row margin causes horizontal scroll
+.row {
+    margin: 0;
+}
 // Headings
 // No use of bem, when we want to override every instance of them
 
@@ -88,6 +92,7 @@ h1 {
     font-size: 26px;
     text-transform: none!important;
     color: $scorpion;
+    margin-top: 0;
 }
 
 
@@ -129,7 +134,7 @@ h4 {
     font-weight: $footer-font-weight;
     margin-top: 32px;
     &--container {
-        padding: 12px 18px 18px;
+        padding: 12px 18px 6px 18px;
     }
     a {
         color: $footer-link;
@@ -142,22 +147,48 @@ h4 {
         letter-spacing: 1px;
         &__logo {
             height: $footer-logo-height;
+            &--eu {
+                height: $footer-logo-height - 10px;
+                margin-left: 12px;
+            }
+        }
+        &__links {
+            width: 100%;
+            text-align: center;
+            a {
+                display: inline-block;
+            }
+            &__left_link {
+                margin-right: 18px;
+            }
+        }
+        &__lang {
+            text-align: center;
+        }
+        &__copyright {
+            text-align: center;
         }
     }
 }
 
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 992px) {
+    .ssp-footer__item__copyright__line--1 {
+        display: block;
+    }
+    .ssp-footer__item__links {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .ssp-footer__item {
-        min-height: $footer-logo-height + 20px;
-        &__powered {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+        min-height: $footer-logo-height;
         &__lang {
+            width: 100%;
             position: absolute;
             bottom: -($btn-padding-y-axis + 2px); // padding + borders
             left: -($btn-padding-x-axis + 2px); // padding + borders
+            text-align: right;
         }
 
         &__copyright {
@@ -165,6 +196,12 @@ h4 {
             bottom: 0;
             left: 0;
             width: 100%;
+            text-align: left;
+        }
+        &__links {
+            position: absolute;
+            bottom: 0;
+            padding-right: 30px;
         }
     }
 }
@@ -317,7 +354,7 @@ h4 {
 .ssp-btn__show-more {
     color: $text-color;
     &:hover {
-        color: $curious-blue;
+        color: $egi_blue_light;
     }
 }
 
@@ -334,7 +371,7 @@ h4 {
 
 
 .ssp-dropdown__two_cols {
-    width: 400px;
+    width: 360px;
     padding: 6px;
     @at-root &--item {
         width: 50%;
@@ -364,7 +401,8 @@ h4 {
             }
         }
         &--other {
-            margin: 2px 46px 2px 46px;
+            margin: 2px 4px 2px 4px;
+            min-width: 160px;
             text-align: center;
         }
     }

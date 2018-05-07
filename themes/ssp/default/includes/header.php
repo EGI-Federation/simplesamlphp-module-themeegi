@@ -46,12 +46,14 @@ header('X-Frame-Options: SAMEORIGIN');
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 <script type="text/javascript" src="/<?php echo $this->data['baseurlpath']; ?>resources/script.js"></script>
 <title>
-  SimpleSAMLphp
+  EGI
   <?php if(array_key_exists('header', $this->data)) { echo (' | ' . $this->data['header']); } ?>
 </title>
 
-<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/css/app.css')); ?>" />
-<link rel="shortcut icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themevanilla/resources/images/favicon.png')); ?>"  />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/css/app.css')); ?>" />
+
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
+<link rel="apple-touch-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
 
 <?php
 
@@ -121,13 +123,13 @@ if($onLoad !== '') {
 
 <div class="header">
   <div class="text-center ssp-logo">
-    <a href="https://simplesamlphp.org/">
-      <img src="<?php echo SimpleSAML_Module::getModuleURL('themevanilla/resources/images/logo.jpg'); ?>" alt="simplesamlphp" />
+    <a href="https://egi.eu/">
+      <img src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo.svg'); ?>" alt="EGI" />
     </a>
   </div>
   <h1 class="text-center">
-    <?php echo $this->t('{themevanilla:default:header_title}'); ?>
-    <small><?php echo $this->t('{themevanilla:default:header_subtitle}'); ?></small>
+    <?php echo $this->t('{themeegi:default:header_title}'); ?>
+    <small><?php echo $this->t('{themeegi:default:header_subtitle}'); ?></small>
   </h1>
 </div> <!-- /header -->
 <div class="ssp-container" id="content">

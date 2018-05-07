@@ -1,8 +1,8 @@
 {
-  "name": "rciam/simplesamlphp-module-themevanilla",
-  "description": "A customisable theme for SimpleSAMLphp based on Bootstrap",
+  "name": "egi-foundation/simplesamlphp-module-themeegi",
+  "description": "A SimpleSAMLphp theme for EGI Check-in service",
   "type": "simplesamlphp-module",
-  "keywords": ["simplesamlphp", "module", "theme", "bootsrtap"],
+  "keywords": ["simplesamlphp", "module", "theme", "bootsrtap", "egi"],
   "license": "Apache License 2.0",
   "authors": [
     {
