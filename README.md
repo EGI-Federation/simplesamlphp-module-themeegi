@@ -2,12 +2,12 @@
 
 ![discopower](/screenshots/disco_buttons_bottom.png)
 
-A theme for the SimpleSAMLphp software that is used by the EGI to provide a
-unified login service to its users.
-It has been created by customizing the [rciam vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
-See the resulted screens in the directory [screenshots](screenshots/).
+A theme for the SimpleSAMLphp software that is used for the EGI Check-in
+service. The theme is based on the [RCIAM vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
 
-More information regarding the installation and the customization of the theme you may found
+Screenshots are available in [screenshots](screenshots/).
+
+More information regarding the installation and the customisation of the theme can be found
 in the [repository of the vanilla theme](https://github.com/rciam/simplesamlphp-module-themevanilla).
 
 ## License
