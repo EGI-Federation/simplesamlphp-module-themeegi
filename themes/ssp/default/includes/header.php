@@ -47,8 +47,12 @@ header('X-Frame-Options: SAMEORIGIN');
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 <script type="text/javascript" src="/<?php echo $this->data['baseurlpath']; ?>resources/script.js"></script>
 <title>
-  EGI
-  <?php if(array_key_exists('header', $this->data)) { echo (' | ' . $this->data['header']); } ?>
+  <?php
+  if (strpos($this->t('{themeegi:default:browser_tab_title}'), 'not translated') === FALSE) {
+    echo $this->t('{themeegi:default:browser_tab_title}');
+  }
+  if(array_key_exists('header', $this->data)) { echo (' | ' . $this->data['header']); } 
+  ?>
 </title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/css/app.css')); ?>" />
