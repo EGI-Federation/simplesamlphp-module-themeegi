@@ -122,6 +122,13 @@ if($onLoad !== '') {
 <body<?php echo $onLoad; ?>>
 
 <div class="header">
+<?php
+  if ($this->t('{themeegi:default:ribbon_text}')) {
+    echo '<div class="corner-ribbon red">';
+    echo $this->t('{themeegi:default:ribbon_text}');
+    echo '</div>';
+  }
+  ?>
   <div class="text-center ssp-logo">
     <a href="https://egi.eu/">
       <img src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo.svg'); ?>" alt="EGI" />
