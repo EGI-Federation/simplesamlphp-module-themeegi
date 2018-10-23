@@ -131,7 +131,7 @@ if($onLoad !== '') {
   }
   ?>
   <div class="text-center ssp-logo">
-    <a href="https://egi.eu/">
+    <a href="<?php echo $this->t('{themeegi:default:logo_link_url}'); ?>" title="<?php echo $this->t('{themeegi:default:header_title}'); ?>">
       <img src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo.svg'); ?>" alt="EGI" />
     </a>
   </div>
