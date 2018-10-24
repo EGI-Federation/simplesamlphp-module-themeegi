@@ -2,11 +2,14 @@
   "browser_tab_title": {
     "en": "EGI"
   },
+  "link_title": {
+    "en": "EGI"
+  },
   "header_title": {
-    "en": "Advanced Computing for Research"
+    "en": "Check-in"
   },
   "header_subtitle": {
-    "en": "Use the same credentials for all our services"
+    "en": ""
   },
   "logo_link_url": {
     "en": "https://www.egi.eu/"
