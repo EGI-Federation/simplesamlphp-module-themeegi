@@ -117,7 +117,7 @@ if ($includeLanguageBar) {
       </div>
       <div class="col-sm-12 col-md-4 ssp-footer__item">
         <div class="ssp-footer__item__links">
-          <a class="ssp-footer__item__links__left_link" href="https://aai.egi.eu/terms">Terms</a><a href="https://aai.egi.eu/privacy">Privacy</a>
+          <a class="ssp-footer__item__links__left_link" href="https://aai.egi.eu/ToU.html">Terms</a><a href="https://aai.egi.eu/privacy.html">Privacy</a>
         </div>
       </div>
     </div><!-- /row -->
