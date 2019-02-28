@@ -60,4 +60,9 @@ $(document).ready(function() {
     Cookies.set('cookies_accepted', true);
   })
 
+  $('#js-open-help').click(function(e) {
+    e.preventDefault;
+    $('#login-help-modal').modal('show');
+  })
+
 });
