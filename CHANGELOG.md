@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Alter Google login button style due to Google+ deprecation.
+
 ### Added
+- Add login instructions for users that cannot find their IdP.
 - Module discopower: Add style rules and logos for the IdPs:
   - QQ
   - WeChat
