@@ -533,3 +533,33 @@ body .ssp-modal-body {
     -webkit-transform: rotate(-45deg);
     z-index: 1000;
 }
+
+.ssp-logos__help {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.list-with-img {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 10px;
+        .img {
+            .glyphicon {
+                position: relative;
+                top: 5px;
+            }
+            float: left;
+            text-align: center;
+            width: 10%;
+            padding: 0 10px;
+            img {
+                max-height: 25px;
+            }
+        }
+        .txt {
+            overflow: hidden;
+
+        }
+    }
+}
