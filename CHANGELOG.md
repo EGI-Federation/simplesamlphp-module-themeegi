@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Module discopower: Add style rules and logos for the IdPs:
   - QQ
   - WeChat
+  - Epos
 
 ## [v-egi-1.1.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.0.0...v-egi-1.1.0) - 2018-10-30
 
