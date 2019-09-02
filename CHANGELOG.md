@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [v-egi-1.2.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.1.0...v-egi-1.2.0) - 2019-09-02
 
 ### Changed
 - Alter Google login button style due to Google+ deprecation.
