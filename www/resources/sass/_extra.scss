@@ -322,7 +322,8 @@ h4 {
         }
         img {
             height: $btn-img-with-label-height;
-            margin-right: 12px
+            margin-right: 12px;
+            display: inline-block;
         }
     }
     &__icon-no-label {
@@ -344,6 +345,7 @@ h4 {
         img {
             height: $btn-img-no-label-height;
             margin: 0px;
+            display: inline-block;
         }
     }
 }
@@ -450,7 +452,7 @@ h4 {
     .ssp-line-or-line__or {
         @extend h2;
         position: relative;
-        background: $white;
+        background: $body-bg;
         padding: 0 24px;
         bottom: -10px;
 
@@ -532,4 +534,34 @@ body .ssp-modal-body {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     z-index: 1000;
+}
+
+.ssp-logos__help {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.list-with-img {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 10px;
+        .img {
+            .glyphicon {
+                position: relative;
+                top: 5px;
+            }
+            float: left;
+            text-align: center;
+            width: 10%;
+            padding: 0 10px;
+            img {
+                max-height: 25px;
+            }
+        }
+        .txt {
+            overflow: hidden;
+
+        }
+    }
 }
