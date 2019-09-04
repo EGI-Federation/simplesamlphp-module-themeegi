@@ -1,5 +1,5 @@
 <?php
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themeegi.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $cookies = $themeConfig->getValue('cookiePolicy');
 $this->data['header'] = (strpos($this->t('{themeegi:policy:page_title}'), 'not translated') === FALSE ? $this->t('{themeegi:policy:page_title}') : '');
 $this->includeAtTemplateBase('includes/header.php');

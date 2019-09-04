@@ -111,9 +111,9 @@ if ($includeLanguageBar) {
 ?>
       <div class="col-sm-12 col-md-4 ssp-footer__item ssp-footer__item--images text-center">
         <a href="https://grnet.gr/">
-          <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
+          <img class="ssp-footer__item__logo" src="<?php echo SimpleSAML\Module::getModuleURL('themeegi/resources/images/grnet_logo_en.svg'); ?>" alt="GRNET" />
         </a>
-          <img class="ssp-footer__item__logo--eu" src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/eu.svg'); ?>" alt="European Union" />
+          <img class="ssp-footer__item__logo--eu" src="<?php echo SimpleSAML\Module::getModuleURL('themeegi/resources/images/eu.svg'); ?>" alt="European Union" />
       </div>
       <div class="col-sm-12 col-md-4 ssp-footer__item">
         <div class="ssp-footer__item__links">
@@ -130,20 +130,20 @@ if ($includeLanguageBar) {
 </footer>
 
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/cookie.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/js/cookie.js')); ?>">
   </script>
 
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/dropdown.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/js/dropdown.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/modal.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/js/modal.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/tooltip.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/js/tooltip.js')); ?>">
   </script>
   <script type="text/javascript"
-          src="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/js/theme.js')); ?>">
+          src="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/js/theme.js')); ?>">
   </script>
 
 </body>
