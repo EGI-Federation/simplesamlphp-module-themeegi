@@ -6,8 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### [Unreleased]
 
+### Added
 - Add style rules and logos for the IdPs:
   - IDPOpen
+- Add languages (Xhosa, Zulu, Afrikaans).
+
+### Changed
+- Rename disco-tpl.php-> disco.tpl.php as needed by simplesamlphp>1.14.
+- Update translation functionality as needed by simplesamlphp>1.14
 
 ## [v-egi-1.2.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.2.0...v-egi-1.2.1) - 2019-09-13
 
