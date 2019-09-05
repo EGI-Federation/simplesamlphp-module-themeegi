@@ -15,6 +15,15 @@ in the [repository of the vanilla theme](https://github.com/rciam/simplesamlphp-
 This work has received funding from the [EGI Foundation (EGI.eu)](https://www.egi.eu/about/egi-foundation/) and the [EOSC-hub project](http://eosc-hub.eu/) (Horizon 2020) under Grant number 777536.
 <img src="https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_high.jpg" height="24">
 
+## Compatibility matrix
+
+This table matches the theme version with the supported SimpleSAMLphp version.
+
+| Theme |  SimpleSAMLphp  |
+|:------:|:--------------:|
+| v-egi-1.2.0 | v1.14     |
+| v-egi-2.0.0 | v1.17     |
+
 ## License
 
 Licensed under the Apache 2.0 license, for details see `LICENSE`.
