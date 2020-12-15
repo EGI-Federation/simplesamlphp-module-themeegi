@@ -177,6 +177,14 @@
             background-size: 26px;
         }
     }
+    &.idpopen {
+        border-color: $idpopen;
+        background-color: $white;
+        img {
+            padding: 5px;
+            margin-right: 0;
+        }
+    }
 
 
 }
