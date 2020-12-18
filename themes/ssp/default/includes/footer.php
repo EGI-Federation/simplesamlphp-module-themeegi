@@ -123,7 +123,7 @@ if ($includeLanguageBar) {
     </div><!-- /row -->
     <div class="row">
       <div class="col-sm-12 ssp-footer__item ssp-footer__item--ack text-center">
-        Copyright &copy; 2016-2019 | Check-in is an EGI service provided by GRNET, receiving funding from the <a href="https://www.egi.eu/about/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a> and the <a href="https://eosc-hub.eu" target="_blank">EOSC-hub project</a> (Horizon 2020) under Grant number 777536 | Powered by <a href="https://github.com/rciam">RCIAM</a>
+        Copyright &copy; 2016-2021 | Check-in is an EGI service provided by GRNET, receiving funding from the <a href="https://www.egi.eu/about/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a> and the <a href="https://eosc-hub.eu" target="_blank">EOSC-hub project</a> (Horizon 2020) under Grant number 777536 | Powered by <a href="https://github.com/rciam">RCIAM</a>
       </div>
     </div>
   </div> <!-- /container-fluid -->
