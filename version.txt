@@ -1,2 +1,2 @@
 simplesamlphp-module-themeegi
-version egi-1.3.0
+version egi-1.3.1
