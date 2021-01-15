@@ -103,7 +103,7 @@ if ($includeLanguageBar) {
       . '<span class="caret"></span>
       </button>
       <ul class="dropdown-menu dropdown-menu-left ssp-dropdown__two_cols" aria-labelledby="dropdownMenu1">';
-    echo join(' ', $textarray);
+    echo implode(' ', $textarray);
     echo '</ul></div></div>'; // /dropup /col-sm-4
   }
 }
@@ -117,13 +117,13 @@ if ($includeLanguageBar) {
       </div>
       <div class="col-sm-12 col-md-4 ssp-footer__item">
         <div class="ssp-footer__item__links">
-          <a class="ssp-footer__item__links__left_link" href="https://aai.egi.eu/ToU.html">Terms</a><a href="https://aai.egi.eu/privacy.html">Privacy</a>
+          <a class="ssp-footer__item__links__left_link" href="views.php?id=aup">Terms</a><a href="views.php?id=privacy">Privacy</a>
         </div>
       </div>
     </div><!-- /row -->
     <div class="row">
       <div class="col-sm-12 ssp-footer__item ssp-footer__item--ack text-center">
-        Copyright &copy; 2016-2021 | Check-in is an EGI service provided by GRNET, receiving funding from the <a href="https://www.egi.eu/about/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a> and the <a href="https://eosc-hub.eu" target="_blank">EOSC-hub project</a> (Horizon 2020) under Grant number 777536 | Powered by <a href="https://github.com/rciam">RCIAM</a>
+        Copyright &copy;<?php echo (strpos($this->t('{themeegi:discopower:copyright_year_start}'), 'not translated') === FALSE ? $this->t('{themeegi:discopower:copyright_year_start}') . '-' : ''); echo date("Y"); ?> | Check-in is an EGI service provided by GRNET, receiving funding from the <a href="https://www.egi.eu/about/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a> and the <a href="https://eosc-hub.eu" target="_blank">EOSC-hub project</a> (Horizon 2020) under Grant number 777536 | Powered by <a href="https://github.com/rciam">RCIAM</a>
       </div>
     </div>
   </div> <!-- /container-fluid -->

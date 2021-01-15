@@ -18,7 +18,8 @@ $config = array(
         array('type' => 'Session State', 'provider' => 'aai.egi.eu', 'name' => 'JSESSIONID', 'thirdParty' => false, 'category' => 'Session', 'purpose' => 'Preserve user session ID to retrieve session information')
     ),
     'views' => array(
-//        'aup' => 'https://example.com/test.html',
+        'aup' => 'https://aai.egi.eu/aup/check-in.html',
+        'privacy' => 'https://aai.egi.eu/privacy.html',
     ),
 );
 
