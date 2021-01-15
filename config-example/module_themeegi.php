@@ -16,7 +16,10 @@ $config = array(
         array('type' => 'Preferences', 'provider' => 'aai.egi.eu', 'name' => 'egi_co_registry_tz', 'thirdParty' => false, 'category' => 'Persistent', 'purpose' => 'Preserve preferred timezone selection for COmanage EGI Account Registry'),
         array('type' => 'Preferences', 'provider' => 'aai.egi.eu', 'name' => 'i18next', 'thirdParty' => false, 'category' => 'Session', 'purpose' => 'Preserve preferred language for EGI AAI OpenID Connect Provider'),
         array('type' => 'Session State', 'provider' => 'aai.egi.eu', 'name' => 'JSESSIONID', 'thirdParty' => false, 'category' => 'Session', 'purpose' => 'Preserve user session ID to retrieve session information')
-    )
+    ),
+    'views' => array(
+//        'aup' => 'https://example.com/test.html',
+    ),
 );
 
 ?>
