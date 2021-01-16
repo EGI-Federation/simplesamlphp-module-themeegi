@@ -1,4 +1,4 @@
-<div id="loader">
+<div id="def-loader" class="loader-container">
     <div class="sk-circle">
         <div class="sk-circle1 sk-child"></div>
         <div class="sk-circle2 sk-child"></div>
