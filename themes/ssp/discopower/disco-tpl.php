@@ -91,7 +91,7 @@ function showEntry($t, $metadata, $favourite = FALSE, $withIcon = FALSE) {
 
 ?>
 
-  <h2 class="text-center"><?php echo $this->t('{themeegi:discopower:title}'); ?></h2>
+  <h2 class="text-center"><?php print $this->t('{themeegi:discopower:title}'); ?></h2>
 
 
 <?php
@@ -118,37 +118,39 @@ function getTranslatedName($t, $metadata) {
 
 $this->includeAtTemplateBase('includes/login_help.php');
 
-
-if (!empty($faventry)) {
-  echo('
+?>
+<?php if (!empty($faventry)): ?>
     <div class="modal fade" id="favourite-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="js-close-custom close"><span aria-hidden="true">&times;</span></button>
-            <h2 class="modal-title">' . $this->t('{themeegi:discopower:favourite_dialog_title}') . '</h2>
+            <h2 class="modal-title"><?php print $this->t('{themeegi:discopower:favourite_dialog_title}'); ?></h2>
           </div>
           <div class="modal-body ssp-modal-body">
             <div class="row text-center">
-              <form id="idpselectform" method="get" action="' . $this->data['urlpattern'] . '" class="ssp-form-favourite">
-                <input type="hidden" name="entityID" value="' . htmlspecialchars($this->data['entityID']) . '" />
-                <input type="hidden" name="return" value="' . htmlspecialchars($this->data['return']) . '" />
-                <input type="hidden" name="returnIDParam" value="' . htmlspecialchars($this->data['returnIDParam']) . '" />
-                <input type="hidden" name="idpentityid" value="' . htmlspecialchars($faventry['entityid']) . '" />
-                <input type="submit" name="formsubmit" id="favouritesubmit" class="ssp-btn ssp-btn__action text-uppercase" value="'
-                  . $this->t('login_at') . ' ' . htmlspecialchars(getTranslatedName($this, $faventry)) . '" />
+              <form id="idpselectform" method="get" action="<?php print $this->data['urlpattern']; ?>" class="ssp-form-favourite">
+                <input type="hidden" name="entityID" value="<?php print htmlspecialchars($this->data['entityID']); ?>" />
+                <input type="hidden" name="return" value="<?php print htmlspecialchars($this->data['return']); ?>" />
+                <input type="hidden" name="returnIDParam" value="<?php print htmlspecialchars($this->data['returnIDParam']); ?>" />
+                <input type="hidden" name="idpentityid" value="<?php print htmlspecialchars($faventry['entityid']); ?>" />
+                <input type="submit"
+                       name="formsubmit"
+                       id="favouritesubmit"
+                       class="ssp-btn ssp-btn__action text-uppercase"
+                       value="<?php print $this->t('login_at') . htmlspecialchars(getTranslatedName($this, $faventry)); ?>" />
               </form>
             </div>
-            <div class="row text-center ssp-modal-or">' . $this->t('{themeegi:discopower:or}') . '</div>
+            <div class="row text-center ssp-modal-or"><?php print $this->t('{themeegi:discopower:or}'); ?></div>
             <div class="row text-center">
-              <button class="ssp-btn text-uppercase ssp-btn ssp-btn__secondary js-close-custom">' . $this->t('{themeegi:discopower:favourite_dialog_button_close}')  . '</button>
+              <button class="ssp-btn text-uppercase ssp-btn ssp-btn__secondary js-close-custom"><?php print $this->t('{themeegi:discopower:favourite_dialog_button_close}'); ?></button>
             </div>
           </div> <!-- /modal-body -->
         </div> <!-- /modal-content -->
       </div> <!-- /modal-dialog -->
     </div> <!-- /modal -->
-  ');
-}
+<?php endif; ?>
+<?php
 
 $idps_in_searchable_list_index;
 $idps_with_logos_index;
@@ -180,7 +182,7 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
           $list_items .= (showEntry($this, $idpentry));
         }
       }
-      echo($top . $search . $list_open . $list_items . $close);
+      print $top . $search . $list_open . $list_items . $close;
     }
     else if($tab == "idps_with_logos") {
       $idps_with_logos_index = array_search($tab, array_keys($this->data['idplist']));
@@ -203,11 +205,11 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
       $list_items .= '<p class="ssp-logos__help" id="js-open-help"><a href="#">' . $this->t('{themeegi:discopower:login_help_text}')  .'</a></p>';
       if($idps_in_searchable_list_index < $idps_with_logos_index) {
         $or = '<div class="text-center ssp-line-or-line ssp-line-or-line--top"><span class="ssp-line-or-line__or">' . $this->t('{themeegi:discopower:or}') . '</span></div>';
-        echo $top . $or . $list_open . $list_items . $close_list . $close;
+        print $top . $or . $list_open . $list_items . $close_list . $close;
       }
       else {
         $or = '<div class="text-center ssp-line-or-line ssp-line-or-line--bottom"><span class="ssp-line-or-line__or">' . $this->t('{themeegi:discopower:or}') . '</span></div>';
-        echo $top . $list_open . $list_items . $close_list . $or . $close;
+        print $top . $list_open . $list_items . $close_list . $or . $close;
       }
     }
   }
