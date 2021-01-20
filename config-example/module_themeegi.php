@@ -18,8 +18,10 @@ $config = array(
         array('type' => 'Session State', 'provider' => 'aai.egi.eu', 'name' => 'JSESSIONID', 'thirdParty' => false, 'category' => 'Session', 'purpose' => 'Preserve user session ID to retrieve session information')
     ),
     'views' => array(
-//        'aup' => 'https://example.com/test.html',
+        'aup' => 'https://aai.egi.eu/aup/check-in.html', // Terms and Conditions URL. The key MUST BE `aup`
+        'privacy' => 'https://aai.egi.eu/privacy.html',  // Privace URL. The key MUST BE `privacy`
     ),
+    'loader' => 'loader',                                // Loading Spinner to use. Two options are available. `loader` or `cmg_loader`
 );
 
 ?>
