@@ -143,7 +143,7 @@ $this->includeAtTemplateBase('includes/login_help.php');
                        name="formsubmit"
                        id="favouritesubmit"
                        class="ssp-btn ssp-btn__action text-uppercase"
-                       value="<?php print $this->t('login_at') . htmlspecialchars(getTranslatedName($this, $faventry)); ?>" />
+                       value="<?php print $this->t('login_at') . ' ' . htmlspecialchars(getTranslatedName($this, $faventry)); ?>" />
               </form>
             </div>
             <div class="row text-center ssp-modal-or"><?php print $this->t('{themeegi:discopower:or}'); ?></div>
