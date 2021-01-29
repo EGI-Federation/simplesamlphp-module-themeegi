@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added missing space in button text
 
+### Changed
+
+- Renamed login_at variable to login_with and moved in the discopower dictionary
+
 ## [v-egi-1.4.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.0...v-egi-1.4.1) - 2021-01-20
 
 ### Added

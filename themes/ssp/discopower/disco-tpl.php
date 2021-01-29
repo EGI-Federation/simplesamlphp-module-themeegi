@@ -143,7 +143,7 @@ $this->includeAtTemplateBase('includes/login_help.php');
                        name="formsubmit"
                        id="favouritesubmit"
                        class="ssp-btn ssp-btn__action text-uppercase"
-                       value="<?php print $this->t('login_at') . ' ' . htmlspecialchars(getTranslatedName($this, $faventry)); ?>" />
+                       value="<?php print $this->t('{themeegi:discopower:login_with}') . ' ' . htmlspecialchars(getTranslatedName($this, $faventry)); ?>" />
               </form>
             </div>
             <div class="row text-center ssp-modal-or"><?php print $this->t('{themeegi:discopower:or}'); ?></div>
@@ -191,8 +191,7 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
     }
     else if($tab == "idps_with_logos") {
       $idps_with_logos_index = array_search($tab, array_keys($this->data['idplist']));
-      $top = '<div class="row ssp-content-group"><div class="col-sm-12">
-            ';
+      $top = '<div class="row ssp-content-group"><div class="col-sm-12">';
       $list_open = '<div class="metalist ssp-content-group__provider-list ssp-content-group__provider-list--other js-idps">';
       $list_items = '';
       $close_list = '</div>'; // /metalist
@@ -221,9 +220,5 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
 }
 
 ?>
-
-
-
-
 
 <?php $this->includeAtTemplateBase('includes/footer.php');
