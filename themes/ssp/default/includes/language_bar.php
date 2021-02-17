@@ -1,6 +1,6 @@
 <?php
 // Language names dictionary
-$langnames = array(
+$langnames = [
     'no'      => 'Bokmål',                      // Norwegian Bokmål
     'nn'      => 'Nynorsk',                     // Norwegian Nynorsk
     'se'      => 'Sámegiella',                  // Northern Sami
@@ -39,7 +39,7 @@ $langnames = array(
     'lv'      => 'Latviešu',                    // Latvian
     'ro'      => 'Românește',                   // Romanian
     'eu'      => 'Euskara',                     // Basque
-);
+];
 
 $languages = $this->getLanguageList();
 ?>
@@ -47,7 +47,7 @@ $languages = $this->getLanguageList();
 <div class="col-sm-12 col-md-4 ssp-footer__item">
     <div class="dropup ssp-footer__item__lang">
         <?php
-            $textarray = array();
+            $textarray = [];
             foreach ($languages as $lang => $current) {
                 $lang = strtolower($lang);
                 if ($current) {
@@ -55,7 +55,8 @@ $languages = $this->getLanguageList();
                 } else {
                     $textarray[] =
                         '<li class="ssp-dropdown__two_cols--item">'
-                        . '<a href="' . htmlspecialchars(\SimpleSAML\Utils\HTTP::addURLParameters(\SimpleSAML\Utils\HTTP::getSelfURL(), array($this->languageParameterName => $lang))) . '">'
+                        . '<a href="' . htmlspecialchars(\SimpleSAML\Utils\HTTP::addURLParameters(\SimpleSAML\Utils\HTTP::getSelfURL(), [$this->languageParameterName => $lang]
+                        )) . '">'
                         . $langnames[$lang]
                         . '</a>'
                         . '</li>';

@@ -17,7 +17,7 @@ if(!array_key_exists('header', $this->data)) {
   $this->data['header'] = 'selectidp';
 }
 $this->data['header'] = $this->t($this->data['header']);
-$this->data['jquery'] = array('core' => TRUE, 'ui' => TRUE, 'css' => TRUE);
+$this->data['jquery'] = ['core' => TRUE, 'ui' => TRUE, 'css' => TRUE];
 
 
 $this->data['head'] = '<script type="text/javascript" src="' . SimpleSAML_Module::getModuleUrl('discopower/js/jquery.livesearch.js')  . '"></script>';

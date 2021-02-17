@@ -61,7 +61,7 @@ $dstName = htmlspecialchars($dstName);
 $attributes = $this->data['attributes'];
 
 $this->data['header'] = $this->t('{consent:consent:consent_header}');
-$this->data['jquery'] = array('core' => TRUE);
+$this->data['jquery'] = ['core' => TRUE];
 
 $this->includeAtTemplateBase('includes/header.php');
 ?>
@@ -79,7 +79,7 @@ $this->includeAtTemplateBase('includes/header.php');
  */
 function present_attributes($t, $attributes, $nameParent)
 {
-    $alternate = array('ssp-table--tr__odd', 'ssp-table--tr__even');
+    $alternate = ['ssp-table--tr__odd', 'ssp-table--tr__even'];
     $i = 0;
     $summary = 'summary="' . $t->t('{consent:consent:table_summary}') . '"';
 
@@ -162,7 +162,8 @@ function present_attributes($t, $attributes, $nameParent)
  echo '<h2 class="text-center">' .
       $this->t(
         '{consent:consent:consent_accept}',
-          array( 'SPNAME' => $dstName, 'IDPNAME' => $srcName)).
+        ['SPNAME' => $dstName, 'IDPNAME' => $srcName]
+      ).
       '</h2>
       <div class="row js-spread">
           <div class="col-sm-12 ssp-content-group js-spread">';

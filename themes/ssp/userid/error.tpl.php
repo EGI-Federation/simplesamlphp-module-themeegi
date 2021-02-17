@@ -1,6 +1,6 @@
 <?php
 $this->data['header'] = $this->t('{userid:error:header}');
-$this->data['jquery'] = array('core' => TRUE);
+$this->data['jquery'] = ['core' => TRUE];
 
 $this->data['head'] = <<<EOF
 <meta name="robots" content="noindex, nofollow" />
@@ -17,7 +17,7 @@ $retryUrl = $this->data['parameters']['%BASEDIR%'] . 'saml2/idp/initSLO.php?Rela
     echo $friendly_title;
   ?>
     <p><?php echo $this->t('{themeegi:userid_error:friendly_description}', $this->data['parameters']); ?></p>
-    <p><?php echo $this->t('{themeegi:userid_error:resolution_description}', array('%RETRY_URL%' => $retryUrl)); ?></p>
+    <p><?php echo $this->t('{themeegi:userid_error:resolution_description}', ['%RETRY_URL%' => $retryUrl]); ?></p>
   </div>
 </div>
 <div class="row">

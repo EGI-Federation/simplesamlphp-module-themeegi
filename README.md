@@ -1,4 +1,4 @@
-<h1 align="center">EGI theme for SimpleSAMLphp</h1>
+<h1 style="text-align: center;">EGI theme for SimpleSAMLphp</h1>
 
 ![discopower](/screenshots/disco_buttons_bottom.png)
 
