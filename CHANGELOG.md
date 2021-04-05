@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added missing space in button text
 - Fix undefined index error for `idps_in_searchable_list_index`
+- Load JavaScript scripts with the new way
 
 ### Changed
 
