@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change discopower js files path
 - Update translation functionality for SSP v1.17
 - Update language array
+- Update templates of concent modules to support SSP v1.17
 
 ## [v-egi-1.4.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.0...v-egi-1.4.1) - 2021-01-20
 

@@ -1,6 +1,7 @@
 <?php
 
 $this->data['header'] = $this->t('{logout:title}');
+$this->data['jquery'] = array('core' => true);
 $this->includeAtTemplateBase('includes/header.php');
 
 echo('<h2>' . $this->data['header'] . '</h2>');
