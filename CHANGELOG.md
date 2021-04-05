@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Added missing space in button text
+- Fix undefined index error for `idps_in_searchable_list_index`
 
 ### Changed
 

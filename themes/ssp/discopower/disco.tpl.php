@@ -193,7 +193,7 @@ foreach( $this->data['idplist'] AS $tab => $slist) {
         }
       }
       $list_items .= '<p class="ssp-logos__help" id="js-open-help"><a href="#">' . $this->t('{themeegi:discopower:login_help_text}')  .'</a></p>';
-      if($idps_in_searchable_list_index < $idps_with_logos_index) {
+      if(!empty($idps_in_searchable_list_index) && $idps_in_searchable_list_index < $idps_with_logos_index) {
         $or = '<div class="text-center ssp-line-or-line ssp-line-or-line--top"><span class="ssp-line-or-line__or">' . $this->t('{themeegi:discopower:or}') . '</span></div>';
         print $top . $or . $list_open . $list_items . $close_list . $close;
       }
