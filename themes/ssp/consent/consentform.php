@@ -1,6 +1,6 @@
 <?php
 // Get Configuration and set the loader
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themeegi.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $loader = $themeConfig->getValue('loader');
 if(!empty($loader)) {
     $this->includeAtTemplateBase('includes/' . $loader . '.php');

@@ -25,7 +25,7 @@ if (array_key_exists('pageid', $this->data)) {
     'page' => $this->data['pageid']
   );
 
-  SimpleSAML_Module::callHooks('htmlinject', $hookinfo);
+  SimpleSAML\Module::callHooks('htmlinject', $hookinfo);
 }
 // - o - o - o - o - o - o - o - o - o - o - o - o -
 
@@ -57,10 +57,10 @@ header('X-Frame-Options: SAMEORIGIN');
   ?>
 </title>
 
-<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/css/app.css')); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/css/app.css')); ?>" />
 
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
-<link rel="apple-touch-icon" href="<?php echo htmlspecialchars(SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
+<link rel="apple-touch-icon" href="<?php echo htmlspecialchars(SimpleSAML\Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')); ?>" />
 
 <?php
 
@@ -138,7 +138,7 @@ if($onLoad !== '') {
   ?>
   <div class="text-center ssp-logo">
     <a href="<?php echo $this->t('{themeegi:default:logo_link_url}'); ?>" title="<?php echo $this->t('{themeegi:default:header_title}'); ?>">
-      <img src="<?php echo SimpleSAML_Module::getModuleURL('themeegi/resources/images/logo.svg'); ?>" alt="EGI" />
+      <img src="<?php echo SimpleSAML\Module::getModuleURL('themeegi/resources/images/logo.svg'); ?>" alt="EGI" />
     </a>
   </div>
   <h1 class="text-center">

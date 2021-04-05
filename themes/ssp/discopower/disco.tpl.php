@@ -3,7 +3,7 @@
 use Webmozart\Assert\Assert;
 
 // Get Configuration and set the loader
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themeegi.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $loader = $themeConfig->getValue('loader');
 if(!empty($loader)) {
     $this->includeAtTemplateBase('includes/' . $loader . '.php');
@@ -66,7 +66,7 @@ function showEntry($t, $metadata, $favourite = FALSE, $withIcon = FALSE) {
     }
 
     $html = '<a class="metaentry ssp-btn ' . $css_button_type  .  ' ' . $css_classname . '" href="' . $basequerystring . urlencode($metadata['entityid']) . '">';
-    $html .= '<img alt="Identity Provider" class="entryicon" src="' . SimpleSAML_Module::getModuleURL('themeegi/resources/images/' . $filename ) . '" />';
+    $html .= '<img alt="Identity Provider" class="entryicon" src="' . SimpleSAML\Module::getModuleURL('themeegi/resources/images/' . $filename ) . '" />';
     if (isset($label)) {
         $html .= '<span>' . $label . '</span>';
     }

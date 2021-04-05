@@ -1,6 +1,6 @@
 <?php
 // Get global config
-$config = SimpleSAML_Configuration::getInstance();
+$config = SimpleSAML\Configuration::getInstance();
 // Get the template
-$template = new SimpleSAML_XHTML_Template($config, 'themeegi:views.tpl.php');
+$template = new SimpleSAML\XHTML\Template($config, 'themeegi:views.tpl.php');
 $template->show();

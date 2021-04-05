@@ -1,7 +1,7 @@
 <?php
 
 // Get Configuration
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themeegi.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $views = $themeConfig->getValue('views');
 
 // Content
