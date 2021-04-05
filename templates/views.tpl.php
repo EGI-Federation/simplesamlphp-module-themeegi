@@ -9,7 +9,7 @@ $body = $this->t('{themeegi:default:no_content}');
 
 // Get request parameter and load Content
 if(!empty($_REQUEST['id']) && !empty($views)) {
-    $ld_view = $views[$_REQUEST['id']];
+    $ldView = $views[$_REQUEST['id']];
     $contextOptions = array(
         'ssl' => array(
             'verify_peer'   => false,
@@ -19,9 +19,9 @@ if(!empty($_REQUEST['id']) && !empty($views)) {
         ),
     );
     $sslContext = stream_context_create($contextOptions);
-    $loaded_content = file_get_contents($ld_view, NULL, $sslContext);
-    if(!empty($loaded_content)) {
-      $body = $loaded_content;
+    $loadedContent = file_get_contents($ldView, NULL, $sslContext);
+    if(!empty($loadedContent)) {
+      $body = $loadedContent;
     }
 }
 

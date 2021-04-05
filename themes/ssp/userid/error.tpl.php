@@ -16,8 +16,8 @@ $translationParams = [
 <div class="row">
   <div class="col-sm-12">
   <?php
-    $friendly_title = '<h2>' . $this->t('{themeegi:userid_error:friendly_title}') . '</h2>';
-    echo $friendly_title;
+    $friendlyTitle = '<h2>' . $this->t('{themeegi:userid_error:friendly_title}') . '</h2>';
+    echo $friendlyTitle;
   ?>
     <p><?php echo $this->t('{themeegi:userid_error:friendly_description}', $translationParams); ?></p>
     <p><?php echo $this->t('{themeegi:userid_error:resolution_description}', array('%RETRY_URL%' => $retryUrl)); ?></p>

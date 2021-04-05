@@ -1,6 +1,6 @@
 <?php
 // Language names dictionary
-$langnames = array(
+$langNames = array(
     'no' => 'Bokmål', // Norwegian Bokmål
     'nn' => 'Nynorsk', // Norwegian Nynorsk
     'se' => 'Sámegiella', // Northern Sami
@@ -48,27 +48,27 @@ $languages = $this->getLanguageList();
 <div class="col-sm-12 col-md-4 ssp-footer__item">
     <div class="dropup ssp-footer__item__lang">
         <?php
-            $textarray = array();
+            $textArray = array();
             foreach ($languages as $lang => $current) {
                 $lang = strtolower($lang);
                 if ($current) {
-                    $lang_current = $langnames[$lang];
+                    $langCurrent = $langNames[$lang];
                 } else {
-                    $textarray[] =
+                    $textArray[] =
                         '<li class="ssp-dropdown__two_cols--item">'
                         . '<a href="' . htmlspecialchars(\SimpleSAML\Utils\HTTP::addURLParameters(\SimpleSAML\Utils\HTTP::getSelfURL(), array($this->getTranslator()->getLanguage()->getLanguageParameterName() => $lang))) . '">'
-                        . $langnames[$lang]
+                        . $langNames[$lang]
                         . '</a>'
                         . '</li>';
                 }
             }
         ?>
         <button class="ssp-btn btn ssp-btn__footer dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <?php print $lang_current; ?>
+          <?php print $langCurrent; ?>
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu dropdown-menu-left ssp-dropdown__two_cols" aria-labelledby="dropdownMenu1">
-            <?php print implode(' ', $textarray); ?>
+            <?php print implode(' ', $textArray); ?>
         </ul>
     </div> <!-- dropup -->
 </div> <!-- col-sm-4 -->

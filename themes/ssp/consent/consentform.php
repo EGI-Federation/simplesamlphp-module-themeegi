@@ -75,12 +75,12 @@ function present_attributes_ssp($t, $attributes, $nameParent)
     }
 
     foreach ($attributes as $name => $value) {
-        $nameraw = $name;
-        $name = $translator->getAttributeTranslation($parentStr . $nameraw);
+        $nameRaw = $name;
+        $name = $translator->getAttributeTranslation($parentStr . $nameRaw);
 
-        if (preg_match('/^child_/', $nameraw)) {
+        if (preg_match('/^child_/', $nameRaw)) {
             // insert child table
-            $parentName = preg_replace('/^child_/', '', $nameraw);
+            $parentName = preg_replace('/^child_/', '', $nameRaw);
             foreach ($value as $child) {
                 $str .= "\n" . '<tr class="odd ssp--table--tr__odd"><td>' .
                     present_attributes_ssp($t, $child, $parentName) . '</td></tr>';
@@ -91,7 +91,7 @@ function present_attributes_ssp($t, $attributes, $nameParent)
             $str .= "\n" . '<tr class="' . $alternate[($i++ % 2)] .
                 '"><td><div class="attrname ssp-table--attrname">' . htmlspecialchars($name) . '</div>';
 
-            $isHidden = in_array($nameraw, $t->data['hiddenAttributes'], true);
+            $isHidden = in_array($nameRaw, $t->data['hiddenAttributes'], true);
             if ($isHidden) {
                 $hiddenId = \SimpleSAML\Utils\Random::generateID();
 
@@ -103,18 +103,18 @@ function present_attributes_ssp($t, $attributes, $nameParent)
             if (sizeof($value) > 1) {
                 // we have several values
                 $str .= '<ul class="list-unstyled ssp-table--attrvalue--list">';
-                foreach ($value as $listitem) {
-                    if ($nameraw === 'jpegPhoto') {
+                foreach ($value as $listItem) {
+                    if ($nameRaw === 'jpegPhoto') {
                         $str .= '<li class="ssp-table--attrvalue--list--item"><img src="data:image/jpeg;base64,' .
-                            htmlspecialchars($listitem) . '" alt="User photo" /></li>';
+                            htmlspecialchars($listItem) . '" alt="User photo" /></li>';
                     } else {
-                        $str .= '<li class="ssp-table--attrvalue--list--item">' . htmlspecialchars($listitem) . '</li>';
+                        $str .= '<li class="ssp-table--attrvalue--list--item">' . htmlspecialchars($listItem) . '</li>';
                     }
                 }
                 $str .= '</ul>';
             } elseif (isset($value[0])) {
                 // we have only one value
-                if ($nameraw === 'jpegPhoto') {
+                if ($nameRaw === 'jpegPhoto') {
                     $str .= '<img src="data:image/jpeg;base64,' .
                         htmlspecialchars($value[0]) . '" alt="User photo" />';
                 } else {
