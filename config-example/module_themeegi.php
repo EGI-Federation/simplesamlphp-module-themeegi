@@ -22,6 +22,7 @@ $config = array(
         'privacy' => 'https://aai.egi.eu/privacy.html',  // Privace URL. The key MUST BE `privacy`
     ),
     'loader' => 'loader',                                // Loading Spinner to use. Two options are available. `loader` or `cmg_loader`
+    'ribbon_text' => '',
 );
 
 ?>
