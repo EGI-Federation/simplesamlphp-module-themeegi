@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update language array
 - Update templates of concent modules to support SSP v1.17
 - Update "no_state" template to support SSP v1.17
+- Update "disco" template to support SSP v1.17
 
 ## [v-egi-1.4.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.0...v-egi-1.4.1) - 2021-01-20
 
