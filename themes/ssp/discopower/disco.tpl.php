@@ -20,17 +20,16 @@ $this->data['header'] = $this->t('selectidp');
 $this->data['header'] = $this->t($this->data['header']);
 $this->data['jquery'] = array('core' => true, 'ui' => false, 'css' => false);
 
-
-$this->data['head'] = '<script type="text/javascript" src="' .
-    SimpleSAML\Module::getModuleURL('discopower/assets/js/jquery.livesearch.js') . '"></script>'."\n";
-$this->data['head'] .= '<script type="text/javascript" src="' .
-    SimpleSAML\Module::getModuleURL('discopower/assets/js/' . $this->data['score'].'.js') . '"></script>' . "\n";
-
 $this->data['head'] .= $this->data['search'];
 
 if (!empty($faventry)) $this->data['autofocus'] = 'favouritesubmit';
 
 $this->includeAtTemplateBase('includes/header.php');
+
+$this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript" src="'.
+    SimpleSAML\Module::getModuleURL('discopower/assets/js/jquery.livesearch.js').'"></script>'."\n";
+$this->data['htmlinject']['htmlContentPost'][] = '<script type="text/javascript" src="'.
+    SimpleSAML\Module::getModuleURL('discopower/assets/js/' . $this->data['score'].'.js') . '"></script>'."\n";
 
 function showEntry($t, $metadata, $favourite = FALSE, $withIcon = FALSE) {
 
