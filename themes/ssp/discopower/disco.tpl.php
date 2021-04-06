@@ -18,7 +18,7 @@ foreach ($this->data['idplist'] as $tab => $sList) {
 
 $this->data['header'] = $this->t('selectidp');
 $this->data['header'] = $this->t($this->data['header']);
-$this->data['jquery'] = array('core' => true, 'ui' => false, 'css' => false);
+$this->data['jquery'] = ['core' => true, 'ui' => false, 'css' => false];
 
 $this->data['head'] = '<link rel="stylesheet" media="screen" type="text/css" href="' .
     SimpleSAML\Module::getModuleURL('discopower/assets/css/uitheme1.12.1/jquery-ui.min.css') . '" />';

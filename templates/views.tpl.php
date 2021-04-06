@@ -10,14 +10,14 @@ $body = $this->t('{themeegi:default:no_content}');
 // Get request parameter and load Content
 if (!empty($_REQUEST['id']) && !empty($views)) {
     $ldView = $views[$_REQUEST['id']];
-    $contextOptions = array(
-        'ssl' => array(
+    $contextOptions = [
+        'ssl' => [
             'verify_peer'   => false,
-        ),
-        'http' => array(
+        ],
+        'http' => [
             'timeout' => 2,  // 2 Seconds
-        ),
-    );
+        ],
+    ];
     $sslContext = stream_context_create($contextOptions);
     $loadedContent = file_get_contents($ldView, null, $sslContext);
     if (!empty($loadedContent)) {
@@ -26,7 +26,7 @@ if (!empty($_REQUEST['id']) && !empty($views)) {
 }
 
 // Load Head and Dependencies
-$this->data['jquery'] = array('core' => true, 'ui' => true, 'css' => true);
+$this->data['jquery'] = ['core' => true, 'ui' => true, 'css' => true];
 // Load Header
 $this->includeAtTemplateBase('includes/header.php');
 // Load Body

@@ -1,6 +1,6 @@
 <?php
 // Language names dictionary
-$langNames = array(
+$langNames = [
     'af' => 'Afrikaans', // Afrikaans
     'ar' => 'العربية', // Arabic
     'ca' => 'Català', // Catalan
@@ -40,7 +40,7 @@ $langNames = array(
     'zh' => '简体中文', // Chinese (simplified)
     'zh-tw' => '繁體中文', // Chinese (traditional)
     'zu' => 'IsiZulu', // Zulu
-);
+];
 
 $languages = $this->getLanguageList();
 ?>
@@ -48,7 +48,7 @@ $languages = $this->getLanguageList();
     <div class="col-sm-12 col-md-4 ssp-footer__item">
         <div class="dropup ssp-footer__item__lang">
             <?php
-            $textArray = array();
+            $textArray = [];
             foreach ($languages as $lang => $current) {
                 $lang = strtolower($lang);
                 if ($current) {
@@ -59,7 +59,7 @@ $languages = $this->getLanguageList();
                         . '<a href="' . htmlspecialchars(
                             \SimpleSAML\Utils\HTTP::addURLParameters(
                                 \SimpleSAML\Utils\HTTP::getSelfURL(),
-                                array($this->getTranslator()->getLanguage()->getLanguageParameterName() => $lang)
+                                [$this->getTranslator()->getLanguage()->getLanguageParameterName() => $lang]
                             )
                         ) . '">'
                         . $langNames[$lang]
