@@ -1,4 +1,5 @@
 <?php
+
 // Get global config
 $config = SimpleSAML\Configuration::getInstance();
 // Get the template

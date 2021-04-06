@@ -8,8 +8,10 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php echo $this->t('{themeegi:attrauthcomanage:exception_description}');?>
 <pre>
 <?php
-    $tag = preg_replace('/attrauthcomanage:/','themeegi:', $this->data['e'], 1);
-    echo (!empty($this->getTag('{'.$tag.'}')) ? $this->t('{'.$tag.'}',  $this->data['parameters']) : $this->data['e']);
+    $tag = preg_replace('/attrauthcomanage:/', 'themeegi:', $this->data['e'], 1);
+    echo !empty($this->getTag('{' . $tag . '}'))
+    ? $this->t('{' . $tag . '}', $this->data['parameters'])
+    : $this->data['e'];
 ?>
 </pre>
 
