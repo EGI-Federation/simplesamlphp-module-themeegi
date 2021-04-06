@@ -152,7 +152,7 @@ if ($onLoad !== '') {
     $onLoad = ' onload="' . $onLoad . '"';
 }
 ?>
-<body <?= $onLoad ?>>
+<body<?= $onLoad ?>>
 
     <div class="header">
         <?php

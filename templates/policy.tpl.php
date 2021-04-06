@@ -140,4 +140,5 @@ $this->includeAtTemplateBase('includes/header.php');
     ?>
 </div>
 
-<?php $this->includeAtTemplateBase('includes/footer.php');
+<?php
+$this->includeAtTemplateBase('includes/footer.php');
