@@ -30,6 +30,6 @@ $this->data['jquery'] = ['core' => true, 'ui' => true, 'css' => true];
 // Load Header
 $this->includeAtTemplateBase('includes/header.php');
 // Load Body
-print $body;
+echo $body;
 // Load Footer
 $this->includeAtTemplateBase('includes/footer.php');

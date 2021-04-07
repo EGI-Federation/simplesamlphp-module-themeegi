@@ -75,11 +75,11 @@ $languages = $this->getLanguageList();
                 aria-haspopup="true"
                 aria-expanded="true"
             >
-                <?php print $langCurrent; ?>
+                <?= $langCurrent ?>
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu dropdown-menu-left ssp-dropdown__two_cols" aria-labelledby="dropdownMenu1">
-                <?php print implode(' ', $textArray); ?>
+                <?= implode(' ', $textArray) ?>
             </ul>
         </div> <!-- dropup -->
     </div> <!-- col-sm-4 -->
