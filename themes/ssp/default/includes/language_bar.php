@@ -83,4 +83,4 @@ $languages = $this->getLanguageList();
             </ul>
         </div> <!-- dropup -->
     </div> <!-- col-sm-4 -->
-<?php endif; ?>
+<?php endif;
