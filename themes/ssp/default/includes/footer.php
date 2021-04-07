@@ -26,7 +26,7 @@ if (
                     >
                         <?= $this->t('{themeegi:discopower:cookies_link_text}') ?>
                     </a>
-                <?php endif ?>
+                <?php endif; ?>
             </p>
             <a id="js-accept-cookies" class="cookies-ok" href="#">
                 <?= $this->t('{themeegi:discopower:cookies_accept_btn_text}') ?>
@@ -34,7 +34,7 @@ if (
         </div>
     </div>
     <!-- /cookies popup -->
-<?php endif ?>
+<?php endif; ?>
 
 <footer class="ssp-footer text-center">
     <div class="container-fluid ssp-footer--container container">
