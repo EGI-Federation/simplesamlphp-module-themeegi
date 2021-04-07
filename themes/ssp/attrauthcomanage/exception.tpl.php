@@ -3,9 +3,9 @@ $this->data['header'] = $this->t('{themeegi:attrauthcomanage:exception_header}')
 
 $this->includeAtTemplateBase('includes/header.php');
 ?>
-<h1><?php echo $this->t('{themeegi:attrauthcomanage:exception_title}');?></h1>
+<h1><?= $this->t('{themeegi:attrauthcomanage:exception_title}') ?></h1>
 
-<?php echo $this->t('{themeegi:attrauthcomanage:exception_description}');?>
+<?= $this->t('{themeegi:attrauthcomanage:exception_description}') ?>
 <pre>
 <?php
     $tag = preg_replace('/attrauthcomanage:/', 'themeegi:', $this->data['e'], 1);

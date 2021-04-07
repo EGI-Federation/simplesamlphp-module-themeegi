@@ -7,10 +7,10 @@ $this->includeAtTemplateBase('includes/header.php');
     <div class="message-container">
       <span class="head-title">
         <img class="email-gif" src="resources/icons/email.gif">
-        <h2><span class="title-msg"><?php echo $this->t('{themeegi:default:message_title}'); ?></span></h2>
+        <h2><span class="title-msg"><?= $this->t('{themeegi:default:message_title}') ?></span></h2>
       </span>
-      <div class="message"><?php echo $this->t('{themeegi:default:message_bd}'); ?></div>
-      <div class="subtitle"><?php echo $this->t('{themeegi:default:message_sub}'); ?></div>
+      <div class="message"><?= $this->t('{themeegi:default:message_bd}') ?></div>
+      <div class="subtitle"><?= $this->t('{themeegi:default:message_sub}') ?></div>
     </div>
 </div>
 
