@@ -5,7 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v-egi-2.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.0) - 2021-05-10
+
+### Fixed
+
+- Added missing space in button text
+- Fix undefined index error for `idps_in_searchable_list_index`
+- Load JavaScript scripts with the new way
+- Load jQuery CSS script
+- Fix `translationParams` error in userid template
+
+### Changed
+
+- Renamed login_at variable to login_with and moved in the discopower dictionary
+- Rename disco-tpl.php->disco.tpl.php
+- Change discopower js files path
+- Update translation functionality for SSP v1.17
+- Update language array
+- Update templates of concent modules to support SSP v1.17
+- Update "no_state" template to support SSP v1.17
+- Update "disco" template to support SSP v1.17
+- Move `ribbon_text` definition to config file
+- Comply to [PSR-4: Autoloader](https://www.php-fig.org/psr/psr-4/) guidelines
+- Comply to [PSR-1: Basic Coding Standard](https://www.php-fig.org/psr/psr-1/) guidelines
+- Comply to [PSR-12: Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
+  guidelines
+- Apply modern array syntax to comply with [SimpleSAMLphp v1.17](https://simplesamlphp.org/docs/stable/simplesamlphp-upgrade-notes-1.17)
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.4.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.0...v-egi-1.4.1) - 2021-01-20
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
@@ -21,22 +52,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Made loader spinner configurable
 - Moved language bar into a shared, stand alone element
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.4.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.3.2...v-egi-1.4.0) - 2021-01-15
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
 - EGI wrapper template for simple html views
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.3.2](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.3.1...v-egi-1.3.2) - 2020-12-22
+
+<!-- markdownlint-enable line-length -->
 
 ### Changed
 
 - `browser_tab_title` from EGI to Check-in in `default.definition.json`
-- `%IDP%` to `%IDPNAME%` in  `userid_error.definition.json`::`friendly_description`
+- `%IDP%` to `%IDPNAME%` in `userid_error.definition.json`::`friendly_description`
 - Removed `<a href=\"%RETRY_URL%\">` from `userid_error.definition.json`::`resolution_description`
 - Removed redundant code from `conseform.php`
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.3.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.3.0...v-egi-1.3.1) - 2020-12-21
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
@@ -46,7 +89,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Custom EGI footer date
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.3.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.2.1...v-egi-1.3.0) - 2020-12-15
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
@@ -54,13 +101,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add style rules and logos for the IdPs:
   - IDPOpen
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.2.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.2.0...v-egi-1.2.1) - 2019-09-13
+
+<!-- markdownlint-enable line-length -->
 
 ### Fixed
 
 - Fix bug in IdPs buttons style caused by unclosed html element.
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.2.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.1.0...v-egi-1.2.0) - 2019-09-02
+
+<!-- markdownlint-enable line-length -->
 
 ### Changed
 
@@ -76,7 +131,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Bitbucket
   - Github
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.1.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.0.0...v-egi-1.1.0) - 2018-10-30
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
@@ -94,7 +153,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update footer style
 - Render header logo link url customisable
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-1.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v2.0.0...v-egi-1.0.0) - 2018-05-07
+
+<!-- markdownlint-enable line-length -->
 
 ### Changed
 
@@ -102,7 +165,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use EGI identity (logos, translations)
 - Use custom EGI footer
 
+<!-- markdownlint-disable line-length -->
+
 ## [v2.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/commits/v2.0.0) - 2018-04-17
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
