@@ -17,7 +17,6 @@ foreach ($this->data['idplist'] as $tab => $sList) {
 }
 
 $this->data['header'] = $this->t('selectidp');
-$this->data['header'] = $this->t($this->data['header']);
 $this->data['jquery'] = ['core' => true, 'ui' => false, 'css' => false];
 
 $this->data['head'] = '<link rel="stylesheet" media="screen" type="text/css" href="' .
@@ -199,8 +198,8 @@ if (!empty($favEntry)) : ?>
     </div> <!-- /modal -->
 <?php endif;
 
-$idpsInSearchableListIndex;
-$idpsWithLogosIndex;
+$idpsInSearchableListIndex = -1;
+$idpsWithLogosIndex = -1;
 foreach ($this->data['idplist'] as $tab => $sList) {
     if (!empty($sList)) {
         if ($tab == 'idps_in_searchable_list') {
@@ -260,7 +259,8 @@ foreach ($this->data['idplist'] as $tab => $sList) {
                 : ''
             )
             . '</a></p>';
-            if (!empty($idpsInSearchableListIndex) && $idpsInSearchableListIndex < $idpsWithLogosIndex) {
+            // if (!empty($idpsInSearchableListIndex) && $idpsInSearchableListIndex < $idpsWithLogosIndex) {
+            if ($idpsInSearchableListIndex > -1 && $idpsInSearchableListIndex < $idpsWithLogosIndex) {
                 $or = '<div class="text-center ssp-line-or-line ssp-line-or-line--top">'
                 . '<span class="ssp-line-or-line__or">'
                 . (
