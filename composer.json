@@ -2,7 +2,13 @@
   "name": "egi-foundation/simplesamlphp-module-themeegi",
   "description": "A SimpleSAMLphp theme for EGI Check-in service",
   "type": "simplesamlphp-module",
-  "keywords": ["simplesamlphp", "module", "theme", "bootsrtap", "egi"],
+  "keywords": [
+    "bootstrap",
+    "egi",
+    "module",
+    "simplesamlphp",
+    "theme"
+  ],
   "license": "Apache License 2.0",
   "authors": [
     {
