@@ -19,7 +19,9 @@ if (
             <p>
                 <?= $this->t('{themeegi:discopower:cookies_text}') ?>
                 <?php
-                if (strpos($this->t('{themeegi:discopower:cookies_link_text}'), 'not translated') === false) : ?>
+                if (
+                    strpos($this->t('{themeegi:discopower:cookies_link_text}'), 'not translated') === false
+                ) : ?>
                     <a
                         href="<?= $this->t('{themeegi:discopower:cookies_link_url}') ?>"
                         target="_blank"

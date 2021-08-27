@@ -6,6 +6,7 @@ $loader = $themeConfig->getValue('loader');
 if (!empty($loader)) {
     $this->includeAtTemplateBase('includes/' . $loader . '.php');
 }
+
 /**
  * Template form for giving consent.
  *
