@@ -152,7 +152,11 @@ if (!empty($favEntry)) : ?>
                                 name="entityID"
                                 value="<?= htmlspecialchars($this->data['entityID']) ?>"
                             />
-                            <input type="hidden" name="return" value="<?= htmlspecialchars($this->data['return']) ?>" />
+                            <input
+                                type="hidden"
+                                name="return"
+                                value="<?= htmlspecialchars($this->data['return']) ?>"
+                            />
                             <input
                                 type="hidden"
                                 name="returnIDParam"
