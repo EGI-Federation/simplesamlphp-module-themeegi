@@ -166,8 +166,8 @@ $this->includeAtTemplateBase('includes/header.php');
                     <?php
                     if ($this->data['usestorage']) {
                         $checked = ($this->data['checked'] ? 'checked="checked"' : '');
-                        echo '<input type="checkbox" name="saveconsent" ' . $checked .
-                            ' value="1" /> ' . $this->t('{consent:consent:remember}');
+                        echo '<input type="checkbox" name="saveconsent" ' . $checked
+                        . ' value="1" /> ' . $this->t('{consent:consent:remember}');
                     } // Embed hidden fields...
                     ?>
                     <input type="hidden" name="StateId" value="<?= htmlspecialchars($this->data['stateId']) ?>" />
@@ -201,11 +201,10 @@ $this->includeAtTemplateBase('includes/header.php');
     </div> <!-- /ssp-content-group -->
 </div> <!-- /row -->
 
-<?php
-if ($this->data['sppp'] !== false) {
-    echo "<p>" . htmlspecialchars($this->t('{consent:consent:consent_privacypolicy}')) . " ";
-    echo '<a target="_blank" href="' . htmlspecialchars($this->data['sppp']) . '">' . $dstName . "</a>";
-    echo "</p>";
-}
+<?php if ($this->data['sppp'] !== false) : ?>
+<p><?= htmlspecialchars($this->t('{consent:consent:consent_privacypolicy}')) ?> 
+<a target="_blank" href="<?= htmlspecialchars($this->data['sppp']) ?>"><?= $dstName ?></a>
+</p>
+<?php endif;
 
 $this->includeAtTemplateBase('includes/footer.php');
