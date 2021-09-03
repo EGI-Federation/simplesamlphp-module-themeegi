@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add 'enable_cookies_banner' option to module config file
+- Add style rules and logos for IdP d4science.
 
 <!-- markdownlint-disable line-length -->
 
