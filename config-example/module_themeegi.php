@@ -86,4 +86,5 @@ $config = [
     // Loading Spinner to use. Two options are available `loader` or `cmg_loader`
     'loader' => 'loader',
     'ribbon_text' => '',
+    'enable_cookies_banner' => false,
 ];
