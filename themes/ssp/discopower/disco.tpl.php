@@ -152,7 +152,11 @@ if (!empty($favEntry)) : ?>
                                 name="entityID"
                                 value="<?= htmlspecialchars($this->data['entityID']) ?>"
                             />
-                            <input type="hidden" name="return" value="<?= htmlspecialchars($this->data['return']) ?>" />
+                            <input
+                                type="hidden"
+                                name="return"
+                                value="<?= htmlspecialchars($this->data['return']) ?>"
+                            />
                             <input
                                 type="hidden"
                                 name="returnIDParam"
@@ -233,7 +237,7 @@ foreach ($this->data['idplist'] as $tab => $sList) {
                     $listItems .= (showEntry($this, $idpEntry));
                 }
             }
-            echo ($top . $search . $listOpen . $listItems . $close);
+            echo $top . $search . $listOpen . $listItems . $close;
         } elseif ($tab == "idps_with_logos") {
             $idpsWithLogosIndex = array_search($tab, array_keys($this->data['idplist']));
             $top = '<div class="row ssp-content-group"><div class="col-sm-12">';

@@ -1,4 +1,8 @@
 <?php
+
+$themeConfig = SimpleSAML_Configuration::getConfig('module_themevanilla.php');
+$enable_cookies_banner = $themeConfig->getValue('enable_cookies_banner');
+
 if (!empty($this->data['htmlinject']['htmlContentPost'])) {
     foreach ($this->data['htmlinject']['htmlContentPost'] as $c) {
         echo $c;
@@ -8,18 +12,16 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
 </div><!-- /container -->
 </div><!-- /ssp-container -->
 
-<?php
-if (
-    strpos($this->t('{themeegi:discopower:cookies_text}'), 'not translated') === false
-    || strpos($this->t('{themeegi:discopower:cookies_accept_btn_text}'), 'not translated') === false
-) : ?>
+<?php if ($enable_cookies_banner) { ?>
     <!-- cookies popup -->
     <div id="cookies">
         <div id="cookies-wrapper">
             <p>
                 <?= $this->t('{themeegi:discopower:cookies_text}') ?>
                 <?php
-                if (strpos($this->t('{themeegi:discopower:cookies_link_text}'), 'not translated') === false) : ?>
+                if (
+                    strpos($this->t('{themeegi:discopower:cookies_link_text}'), 'not translated') === false
+                ) : ?>
                     <a
                         href="<?= $this->t('{themeegi:discopower:cookies_link_url}') ?>"
                         target="_blank"

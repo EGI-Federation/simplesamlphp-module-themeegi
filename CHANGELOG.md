@@ -5,20 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Add 'enable_cookies_banner' option to module config file
+- Add style rules and logos for IdP d4science.
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.4](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.2...v-egi-2.0.4) - 2021-07-12
+
+<!-- markdownlint-enable line-length -->
 
 ### Fixed
 
 - Fixed not translated tab title
 - Fixed discovery page idp buttons and idp searchable list blocks ordering
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.3](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.2...v-egi-2.0.3) - 2021-07-08
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
 - Add style rules and logos for the IdP Umbrellaid
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.2](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.2) - 2021-07-05
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
@@ -28,13 +47,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `noty.definition.json` dictionary to `attrauthcomanage_noty.definition.json`
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.1) - 2021-07-02
+
+<!-- markdownlint-enable line-length -->
 
 ### Added
 
 - `noty.definition.json` dictionary override for simplesamlphp-module-attrauthcomanage
 
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.0](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.0) - 2021-05-10
+
+<!-- markdownlint-enable line-length -->
 
 ### Fixed
 

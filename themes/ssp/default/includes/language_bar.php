@@ -1,4 +1,5 @@
 <?php
+
 // Language names dictionary
 $langNames = [
     'af' => 'Afrikaans', // Afrikaans

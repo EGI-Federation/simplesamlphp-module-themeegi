@@ -63,11 +63,10 @@ if ($themeUse !== 'default') {
 
 // XXX Set JS/CSS Dependencies
 $this->data['jquery'] = ['core' => true, 'ui' => false, 'css' => false];
-$this->data['head'] = '<link rel="stylesheet"'
-    . ' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">'
-    . PHP_EOL
-    . '<link rel="stylesheet" type="text/css" href="/'
-    . $this->data['baseurlpath'] . 'module.php/attrauthcomanage/resources/css/style.css" />' . PHP_EOL;
+$this->data['head'] = '<link rel="stylesheet" '
+    . 'href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">' . PHP_EOL
+    . '<link rel="stylesheet" type="text/css" href="/' . $this->data['baseurlpath']
+    . 'module.php/attrauthcomanage/resources/css/style.css" />' . PHP_EOL;
 
 // XXX Include Header
 $this->includeAtTemplateBase('includes/header.php');
@@ -76,12 +75,12 @@ $this->includeAtTemplateBase('includes/header.php');
 <p>
 <h3 id="attributeheader">
     <?php if (!empty($this->data['noty']['icon'])) : ?>
-        <img class="gif-box" src="resources/icons/<?= $this->data['noty']['icon'] ?>">
+    <img class="gif-box" src="resources/icons/<?= $this->data['noty']['icon'] ?>">
     <?php endif; ?>
     <p><?= $this->t('{themeegi:attrauthcomanage_noty:title}') ?></p>
 </h3>
 <?php if (!is_null($notyStatus)) : ?>
-    <div id="noty-info-bar" class="<?= $notyLevel ?>"><?= $notyStatus ?></div>
+<div id="noty-info-bar" class="<?= $notyLevel ?>"><?= $notyStatus ?></div>
 <?php endif; ?>
 <div class="noty-description">
     <?php
@@ -100,36 +99,36 @@ $this->includeAtTemplateBase('includes/header.php');
     !empty($this->data['yesTarget'])
     && $yesButtonShow
 ) : ?>
-    <form
-        style="display: inline; margin: 0px; margin-right: 0.5em; padding: 0px"
-        onclick="javascript:form_ajax(this)"
-        onsubmit="event.preventDefault();return false;"
-        method="post"
-        action="<?= htmlspecialchars($this->data['yesTarget']) ?>"
-    >
-        <?php foreach ($this->data['yesData'] as $name => $value) : ?>
-            <input
-                type="hidden"
-                name="<?= htmlspecialchars($name) ?>"
-                value="<?= htmlspecialchars($value) ?>"
-            />
-        <?php endforeach; ?>
-        <?php foreach ($this->data['noty']['form_fields'] as $name => $value) : ?>
-            <input
-                type="hidden"
-                name="<?= htmlspecialchars($name) ?>"
-                value="<?= htmlspecialchars($value) ?>"
-            />
-        <?php endforeach; ?>
-        <input
-            type="hidden"
-            name="yes"
-            value="yes"
-        />
-        <button type="submit" name="yes" class="btn btn-primary" id="yesbutton">
-            <?= htmlspecialchars($yesButtonLabel) ?>
-        </button>
-    </form>
+<form
+    style="display: inline; margin: 0px; margin-right: 0.5em; padding: 0px"
+    onclick="javascript:form_ajax(this)"
+    onsubmit="event.preventDefault();return false;"
+    method="post"
+    action="<?= htmlspecialchars($this->data['yesTarget']) ?>"
+>
+    <?php foreach ($this->data['yesData'] as $name => $value) : ?>
+    <input
+        type="hidden"
+        name="<?= htmlspecialchars($name) ?>"
+        value="<?= htmlspecialchars($value) ?>"
+    />
+    <?php endforeach; ?>
+    <?php foreach ($this->data['noty']['form_fields'] as $name => $value) : ?>
+    <input
+        type="hidden"
+        name="<?= htmlspecialchars($name) ?>"
+        value="<?= htmlspecialchars($value) ?>"
+    />
+    <?php endforeach; ?>
+    <input
+        type="hidden"
+        name="yes"
+        value="yes"
+    />
+    <button type="submit" name="yes" class="btn btn-primary" id="yesbutton">
+        <?= htmlspecialchars($yesButtonLabel) ?>
+    </button>
+</form>
 <?php endif; ?>
 
 <!-- Cancel/ Abort Action -->
@@ -139,11 +138,11 @@ $this->includeAtTemplateBase('includes/header.php');
     method="get"
 >
     <?php foreach ($this->data['logoutData'] as $name => $value) : ?>
-        <input
-            type="hidden"
-            name="<?= htmlspecialchars($name) ?>"
-            value="<?= htmlspecialchars($value) ?>"
-        />
+    <input
+        type="hidden"
+        name="<?= htmlspecialchars($name) ?>"
+        value="<?= htmlspecialchars($value) ?>"
+    />
     <?php endforeach; ?>
     <button
         type="submit"
@@ -160,14 +159,17 @@ $this->includeAtTemplateBase('includes/header.php');
 $this->includeAtTemplateBase('includes/footer.php');
 
 ?>
-<script type="text/javascript"
-        src="/<?= $this->data['baseurlpath']; ?>module.php/attrauthcomanage/resources/js/noty/jquery.noty.js">
+<script
+    type="text/javascript"
+    src="/<?= $this->data['baseurlpath'] ?>module.php/attrauthcomanage/resources/js/noty/jquery.noty.js">
 </script>
-<script type="text/javascript"
-        src="/<?= $this->data['baseurlpath']; ?>module.php/attrauthcomanage/resources/js/noty/layouts/topCenter.js">
+<script
+    type="text/javascript"
+    src="/<?= $this->data['baseurlpath'] ?>module.php/attrauthcomanage/resources/js/noty/layouts/topCenter.js">
 </script>
-<script type="text/javascript"
-        src="/<?= $this->data['baseurlpath']; ?>module.php/attrauthcomanage/resources/js/noty/themes/comanage.js">
+<script
+    type="text/javascript"
+    src="/<?= $this->data['baseurlpath'] ?>module.php/attrauthcomanage/resources/js/noty/themes/comanage.js">
 </script>
 <script type="application/javascript">
     let button_text = '<?= $this->t('{themeegi:attrauthcomanage_noty:yes}') ?>';
