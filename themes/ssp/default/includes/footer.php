@@ -1,6 +1,6 @@
 <?php
 
-$themeConfig = SimpleSAML_Configuration::getConfig('module_themevanilla.php');
+$themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $enable_cookies_banner = $themeConfig->getValue('enable_cookies_banner');
 
 if (!empty($this->data['htmlinject']['htmlContentPost'])) {
@@ -12,7 +12,7 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
 </div><!-- /container -->
 </div><!-- /ssp-container -->
 
-<?php if ($enable_cookies_banner) { ?>
+<?php if ($enable_cookies_banner) : ?>
     <!-- cookies popup -->
     <div id="cookies">
         <div id="cookies-wrapper">
