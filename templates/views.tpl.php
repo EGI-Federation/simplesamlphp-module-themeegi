@@ -19,7 +19,7 @@ if (!empty($_REQUEST['id']) && !empty($views)) {
         ],
     ];
     $sslContext = stream_context_create($contextOptions);
-    $loadedContent = file_get_contents($ldView, null, $sslContext);
+    $loadedContent = file_get_contents($ldView, false, $sslContext);
     if (!empty($loadedContent)) {
         $body = $loadedContent;
     }

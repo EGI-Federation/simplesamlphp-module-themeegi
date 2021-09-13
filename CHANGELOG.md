@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
+## [v-egi-2.0.5](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.4...v-egi-2.0.5) - 2021-09-13
+
+<!-- markdownlint-enable line-length -->
+
+### Added
+
+- Add 'enable_cookies_banner' option to module config file
+- Add style rules and logos for IdP d4science.
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.4](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.2...v-egi-2.0.4) - 2021-07-12
 
 <!-- markdownlint-enable line-length -->
