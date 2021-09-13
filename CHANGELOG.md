@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
+## [v-egi-2.0.6](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.5...v-egi-2.0.6) - 2021-09-13
+
+<!-- markdownlint-enable line-length -->
+
+### Fixed
+
+- Fix syntax errors in footer after syncing
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.5](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.4...v-egi-2.0.5) - 2021-09-13
 
 <!-- markdownlint-enable line-length -->
@@ -18,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
-## [v-egi-2.0.4](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.2...v-egi-2.0.4) - 2021-07-12
+## [v-egi-2.0.4](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.3...v-egi-2.0.4) - 2021-07-12
 
 <!-- markdownlint-enable line-length -->
 
@@ -39,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
-## [v-egi-2.0.2](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.2) - 2021-07-05
+## [v-egi-2.0.2](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.1...v-egi-2.0.2) - 2021-07-05
 
 <!-- markdownlint-enable line-length -->
 
@@ -53,7 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
-## [v-egi-2.0.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-1.4.1...v-egi-2.0.1) - 2021-07-02
+## [v-egi-2.0.1](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.0...v-egi-2.0.1) - 2021-07-02
 
 <!-- markdownlint-enable line-length -->
 
