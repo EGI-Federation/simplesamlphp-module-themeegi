@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
+## [v-egi-2.0.7](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.6...v-egi-2.0.7) - 2021-11-25
+
+<!-- markdownlint-enable line-length -->
+
+### Changed
+
+- Improved showNoty dictionary lexicalls
+- Made showNoty title configurable
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.6](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.5...v-egi-2.0.6) - 2021-09-13
 
 <!-- markdownlint-enable line-length -->
