@@ -10,8 +10,8 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 $tag = preg_replace('/attrauthcomanage:/', 'themeegi:', $this->data['e'], 1);
 echo !empty($this->getTag('{' . $tag . '}'))
-? $this->t('{' . $tag . '}', $this->data['parameters'])
-: $this->data['e'];
+      ? $this->t('{' . $tag . '}', $this->data['parameters'])
+      : $this->data['e'];
 ?>
 </pre>
 
