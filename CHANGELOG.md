@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
+## [v-egi-2.0.9](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.8...v-egi-2.0.9) - 2021-12-21
+
+<!-- markdownlint-enable line-length -->
+
+### Added
+
+- Top notification banners
+
+<!-- markdownlint-disable line-length -->
+
+## [v-egi-2.0.8](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.7...v-egi-2.0.8) - 2021-12-01
+
+<!-- markdownlint-enable line-length -->
+
+### Fixed
+
+- Dictionary key in template file
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.7](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.6...v-egi-2.0.7) - 2021-11-25
 
 <!-- markdownlint-enable line-length -->
