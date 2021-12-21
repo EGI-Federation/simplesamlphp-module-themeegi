@@ -2,6 +2,10 @@
 
 $themeConfig = SimpleSAML\Configuration::getConfig('module_themeegi.php');
 $ribbonText = $themeConfig->getValue('ribbon_text');
+$notyText = !empty($themeConfig->getValue('noty_text')) ? $themeConfig->getValue('noty_text') : '';
+$notyClass = !empty($themeConfig->getValue('noty_class'))
+             ? 'noty-top-' . $themeConfig->getValue('noty_class')
+             : 'noty-top-info';
 
 /**
  * Support the htmlinject hook, which allows modules to change header, pre and post body on all pages.
@@ -80,6 +84,13 @@ header('X-Frame-Options: SAMEORIGIN');
             SimpleSAML\Module::getModuleURL('themeegi/resources/images/logo_site-300x300.png')
         ) ?>"
     />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+        crossorigin="anonymous"
+    />
+  <!-- Add this in your <head> tag -->
 
     <?php
 
@@ -149,11 +160,23 @@ if ($onLoad !== '') {
 <body<?= $onLoad ?>>
 
     <div class="header">
+        <!--   Ribbon Text     -->
         <?php if (!empty($ribbonText)) : ?>
         <div class="corner-ribbon red">
             <?= $ribbonText ?>
         </div>
         <?php endif; ?>
+
+        <!--    Noty top bar    -->
+        <?php if (!empty($notyText)) : ?>
+        <div id="noty-info-bar" class="<?= $notyClass ?> noty-top-global">
+            <?=  $notyText ?>
+            <a class="noty-top-close" href="#" onclick="closeNoty(this)">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+        <?php endif; ?>
+
         <div class="text-center ssp-logo">
             <a
                 <?=
