@@ -87,9 +87,9 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
                     : ''
                 )
                 . date("Y") ?> | Check-in is an EGI service provided by GRNET, receiving funding from the
-                <a href="https://www.egi.eu/about/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a>
-                and the <a href="https://eosc-hub.eu" target="_blank">EOSC-hub project</a>
-                (Horizon 2020) under Grant number 777536 | Powered by <a href="https://github.com/rciam">RCIAM</a>
+                <a href="https://www.egi.eu/egi-foundation/" target="_blank">EGI Foundation (EGI.eu)</a>
+                and the <a href="https://www.egi.eu/project/egi-ace/" target="_blank">EGI-ACE project</a>
+                (Horizon 2020) under Grant number 101017567 | Powered by <a href="https://rciam.github.io/rciam-docs/" target="_blank">RCIAM</a>
             </div>
         </div>
     </div> <!-- /container-fluid -->
