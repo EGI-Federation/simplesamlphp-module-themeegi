@@ -77,7 +77,7 @@ $this->includeAtTemplateBase('includes/header.php');
     <?php if (!empty($this->data['noty']['icon'])) : ?>
     <img class="gif-box" src="resources/icons/<?= $this->data['noty']['icon'] ?>">
     <?php endif; ?>
-    <?php if(!empty($this->data['noty']['title'])) : ?>
+    <?php if (!empty($this->data['noty']['title'])) : ?>
     <p><?= $this->t('{themeegi:attrauthcomanage_noty:' . $this->data['noty']['title'] . '}') ?></p>
     <?php endif; ?>
 </h3>
