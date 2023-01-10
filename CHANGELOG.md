@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- markdownlint-disable line-length -->
 
+## [v-egi-2.0.10](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.9...v-egi-2.0.10) - 2023-01-10
+
+<!-- markdownlint-enable line-length -->
+
+### Changed
+
+- Update EGI-ACE link in footer
+- Update D4Science Logo
+- Code style changes
+
+<!-- markdownlint-disable line-length -->
+
 ## [v-egi-2.0.9](https://github.com/EGI-Foundation/simplesamlphp-module-themeegi/compare/v-egi-2.0.8...v-egi-2.0.9) - 2021-12-21
 
 <!-- markdownlint-enable line-length -->
