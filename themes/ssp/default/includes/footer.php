@@ -40,7 +40,7 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
 
 <footer class="ssp-footer text-center">
     <div class="container-fluid ssp-footer--container container">
-        <div class="row ssp-content-group--footer">
+        <div style="display:flex; align-items:center;" class="row ssp-content-group--footer">
             <!--   Add language bar   -->
             <?php
             $includeLanguageBar = (!empty($_POST)) ? false : true;
@@ -75,6 +75,7 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
                         Terms
                     </a>
                     <a href="/proxy/module.php/themeegi/views.php?id=privacy">Privacy</a>
+                    <a href="https://docs.egi.eu/users/aai/check-in">Documentation</a>
                 </div>
             </div>
         </div><!-- /row -->
