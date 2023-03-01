@@ -46,7 +46,7 @@ $langNames = [
 $languages = $this->getLanguageList();
 ?>
 <?php if (count($languages) > 1) : ?>
-    <div class="col-sm-12 col-md-4 ssp-footer__item">
+    <div style="display:flex; align-items:center;" class="col-sm-12 col-md-4 ssp-footer__item">
         <div class="dropup ssp-footer__item__lang">
             <?php
             $textArray = [];
@@ -83,5 +83,6 @@ $languages = $this->getLanguageList();
                 <?= implode(' ', $textArray) ?>
             </ul>
         </div> <!-- dropup -->
+        <div style="margin-left:1em;"><a href="mailto:checkin-support@mailman.egi.eu">Support</a></div>
     </div> <!-- col-sm-4 -->
 <?php endif;
