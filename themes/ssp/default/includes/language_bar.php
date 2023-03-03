@@ -46,7 +46,7 @@ $langNames = [
 $languages = $this->getLanguageList();
 ?>
 <?php if (count($languages) > 1) : ?>
-    <div style="display:flex; align-items:center;" class="col-sm-12 col-md-4 ssp-footer__item">
+    <div class="ssp-align col-sm-12 col-md-4 ssp-footer__item">
         <div class="dropup ssp-footer__item__lang">
             <?php
             $textArray = [];
@@ -70,7 +70,7 @@ $languages = $this->getLanguageList();
             }
             ?>
             <button
-                class="ssp-btn btn ssp-btn__footer dropdown-toggle"
+                class="btn ssp-btn__footer dropdown-toggle"
                 type="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"

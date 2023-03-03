@@ -40,7 +40,7 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
 
 <footer class="ssp-footer text-center">
     <div class="container-fluid ssp-footer--container container">
-        <div style="display:flex; align-items:center;" class="row ssp-content-group--footer">
+        <div class="row ssp-content-group--footer">
             <!--   Add language bar   -->
             <?php
             $includeLanguageBar = (!empty($_POST)) ? false : true;

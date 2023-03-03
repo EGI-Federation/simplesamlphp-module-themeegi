@@ -151,6 +151,9 @@ h4 {
     &--container {
         padding: 12px 18px 6px 18px;
     }
+    .row {
+        margin-bottom: 1em;
+    }
     a {
         color: $footer-link;
         &:hover {
@@ -192,7 +195,11 @@ h4 {
         &--ack {
             font-size: 13px;
         }
-
+        &.ssp-align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -206,6 +213,9 @@ h4 {
     .ssp-footer__item {
         &__lang {
             text-align: left;
+        }
+        &.ssp-align {
+            justify-content: start;
         }
     }
 
