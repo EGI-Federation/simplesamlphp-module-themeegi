@@ -74,7 +74,7 @@ if (!empty($this->data['htmlinject']['htmlContentPost'])) {
                     <a class="ssp-footer__item__links__left_link" href="/proxy/module.php/themeegi/views.php?id=aup">
                         Terms
                     </a>
-                    <a href="/proxy/module.php/themeegi/views.php?id=privacy">Privacy</a>
+                    <a class="ssp-footer__item__links__left_link" href="/proxy/module.php/themeegi/views.php?id=privacy">Privacy</a>
                     <a href="https://docs.egi.eu/users/aai/check-in">Documentation</a>
                 </div>
             </div>
