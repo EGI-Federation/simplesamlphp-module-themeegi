@@ -56,6 +56,12 @@
   "user_suspended_title": {
     "en": "Identity suspended"
   },
+  "user_error": {
+    "en": "Your identity (%ORGID%) is in error state. Please contact our <a href=\"mailto:checkin-support@mailman.egi.eu\">support</a> and make sure to include the error message above"
+  },
+  "user_error_title": {
+      "en": "Sorry, we were not able to log you in"
+  },
   "yes": {
     "en": "Resend Verification Email"
   }
